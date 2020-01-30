@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19d166ed-efbe-45b4-b221-b6325ff61bd9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Informationextraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/Informationextraction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conversation.txt" beforeDir="false" afterPath="$PROJECT_DIR$/conversation.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elastic.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/strc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/pip-selfcheck.json" beforeDir="false" afterPath="$PROJECT_DIR$/venv/pip-selfcheck.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part_Of_Speech_Model/POS-Modelbuilder.py" beforeDir="false" afterPath="$PROJECT_DIR$/Part_Of_Speech_Model/POS-Modelbuilder.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,23 +13,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Informationextraction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1156">
-              <caret line="82" column="112" selection-start-line="82" selection-start-column="112" selection-end-line="82" selection-end-column="112" />
+            <state relative-caret-position="-7">
+              <caret line="47" column="21" lean-forward="true" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conversation.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2400">
-              <caret line="160" column="71" selection-start-line="160" selection-start-column="71" selection-end-line="160" selection-end-column="71" />
             </state>
           </provider>
         </entry>
@@ -44,6 +30,25 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
               <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ClassifierBasedGermanTagger/ClassifierBasedGermanTagger.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-308" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Part_Of_Speech_Model/POS-Modelbuilder.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -68,12 +73,13 @@
         <option value="$PROJECT_DIR$/elastic.py" />
         <option value="$PROJECT_DIR$/strc" />
         <option value="$PROJECT_DIR$/conversation.txt" />
-        <option value="$PROJECT_DIR$/Informationextraction.py" />
         <option value="$PROJECT_DIR$/functions.py" />
+        <option value="$PROJECT_DIR$/Informationextraction.py" />
+        <option value="$PROJECT_DIR$/Part_Of_Speech_Model/POS-Modelbuilder.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="width" value="1280" />
     <option name="height" value="800" />
   </component>
@@ -83,7 +89,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -91,10 +96,21 @@
               <item name="Atemschutzüberwachung" type="b2602c69:ProjectViewProjectNode" />
               <item name="Atemschutzüberwachung" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Atemschutzüberwachung" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Atemschutzüberwachung" type="462c0819:PsiDirectoryNode" />
+              <item name="ClassifierBasedGermanTagger" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Atemschutzüberwachung" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Atemschutzüberwachung" type="462c0819:PsiDirectoryNode" />
+              <item name="Part_Of_Speech_Model" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -231,7 +247,7 @@
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2494043" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2494043" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -257,28 +273,13 @@
     <entry file="file://$PROJECT_DIR$/ClassifierBasedGermanTagger/_init_.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/ClassifierBasedGermanTagger/ClassifierBasedGermanTagger.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-489" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Part_Of_Speech_Model/POS-Modelbuilder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.py" />
     <entry file="file://$PROJECT_DIR$/strc" />
     <entry file="file://$PROJECT_DIR$/elastic.py" />
     <entry file="file://$PROJECT_DIR$/Informationextraction.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="82" column="112" selection-start-line="82" selection-start-column="112" selection-end-line="82" selection-end-column="112" />
+        <state relative-caret-position="-7">
+          <caret line="47" column="21" lean-forward="true" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
@@ -296,6 +297,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClassifierBasedGermanTagger/ClassifierBasedGermanTagger.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-308" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Part_Of_Speech_Model/POS-Modelbuilder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

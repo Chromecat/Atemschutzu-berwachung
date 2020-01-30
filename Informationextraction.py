@@ -34,8 +34,7 @@ functions.replacetag("Frage", "X-FRAGE", sentence)
 functions.replacetagtype("Druck", "NE", "CARD", "DRUCK", sentence)
 functions.replacetagtwo("Verstanden", "Ende", "X-ENDE", sentence)
 
-#print(sentence[0][0][0])
-
+# Grammatik zum zusammensetzen
 grammar = """
             EINHEIT: {<TRUPP><NE>?}
             Ansprechen: {<EINHEIT><NE>?<X-FÜR><EINHEIT><NE>?}
@@ -46,9 +45,10 @@ grammar = """
             Druckangabe: {<DRUCK><CARD>?<CARD>?<CARD>?<CARD>?}
 
           """
-
+# Grammatik umwandeln
 grammar_parser = nltk.RegexpParser(grammar)
 
+# dummy für die Einheiten
 Einheit1 = ""
 Einheit2 = ""
 
@@ -64,6 +64,8 @@ for x in range(len(sentence)):
     sentence_grammar = grammar_parser.parse(sentence[x])
 
     print()
+
+    # Logik zm Übertragen der Einheit in die folgenden Nachrichten
     if re.findall("EINHEIT", str(sentence_grammar)):
         if re.findall("X-VON", str(sentence_grammar)):
             try:
@@ -75,10 +77,13 @@ for x in range(len(sentence)):
             except IndexError:
                 Einheit2 = ("Einheit2: " + str(sentence_grammar[2][0][0]))
 
+    # Logik zum Anzeigen des Drucks nur wenn erkannt.
     if re.findall("DRUCK", str(sentence_grammar)):
         Druck = ("Druck: " + str(re.findall("[0-9]+", str(sentence_grammar))))
     else: Druck = ""
 
     #print(Timestamps[x][0] + " " + Einheit1 + " " + Einheit2 + " " + Druck + " " + Text)
+
+    # Ausgabe in Farbe
     print(colored(Timestamps[x][0], 'yellow'), colored(" " + Einheit1, 'cyan'), colored(" " + Einheit2, 'magenta'), colored(" " + Druck, 'red'),
           colored(" " + Text, 'white'))
