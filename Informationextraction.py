@@ -2,6 +2,7 @@ import pickle
 import nltk
 import functions
 import re
+from termcolor import colored
 
 # POS model laden
 with open('Part_Of_Speech_Model/nltk_german_classifier_data.pickle', 'rb') as f:
@@ -10,6 +11,14 @@ with open('Part_Of_Speech_Model/nltk_german_classifier_data.pickle', 'rb') as f:
 # Konversation aus externer Datei laden
 Funkkonversation = open("conversation.txt", "r")
 Funkkonversation = Funkkonversation.read()
+
+Timestamps = Funkkonversation.splitlines()
+for x in range(len(Timestamps)):
+    Timestamps[x] = re.findall("\[Time:\d+:\d+,\d+\]", Timestamps[x])
+    # jeden Timestamp extrahieren um eine liste zu haben.
+    # unten dann den jeweiligen Timestemp wieder aufgreifen  [Time:10:04,01]
+
+Funkkonversation = re.sub("\[Time:\d+:\d+,\d+\]", "", Funkkonversation)
 
 # NLTK operationen
 sentence = nltk.sent_tokenize(Funkkonversation)  # satz seperation
@@ -70,5 +79,6 @@ for x in range(len(sentence)):
         Druck = ("Druck: " + str(re.findall("[0-9]+", str(sentence_grammar))))
     else: Druck = ""
 
-    print(Einheit1 + " " + Einheit2 + " " + Druck + " " + Text)
-
+    #print(Timestamps[x][0] + " " + Einheit1 + " " + Einheit2 + " " + Druck + " " + Text)
+    print(colored(Timestamps[x][0], 'yellow'), colored(" " + Einheit1, 'cyan'), colored(" " + Einheit2, 'magenta'), colored(" " + Druck, 'red'),
+          colored(" " + Text, 'white'))
